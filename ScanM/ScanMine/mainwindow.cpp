@@ -76,7 +76,7 @@ void MainWindow::mousePressEvent(QMouseEvent* e){
 
 #if 1
     if(mp.check_click(e->x(), e->y())){
-        MDEBUG("click here");
+        //MDEBUG("click here");
     }
     update();
 
@@ -96,13 +96,20 @@ void MainWindow::tm_count(){
 
 }
 
-#if 1
 void MainWindow::on_func_btn_clicked(){
+    MDEBUG();
+
+
+
+
+
+#if 0
 
     rep(i, 0, mp.rows){
         rep(j, 0, mp.cols){
             MDEBUG("[%d][%d] = %d", i, j, mp.gds[i][j]);
         }
     }
-}
 #endif
+}
+

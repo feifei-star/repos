@@ -139,7 +139,7 @@ typedef struct map_tag{
             gd.c = (px -init_px) /grid_len;
             //gds[gd] = GRID_MINE;
             gds[gd.c][gd.r] = GRID_MINE;
-            MDEBUG("click grid = [%d, %d]", gd.c, gd.r);
+            MDEBUG("click grid = [%d, %d]", gd.r, gd.c);
             return true;
         }
         return false;
